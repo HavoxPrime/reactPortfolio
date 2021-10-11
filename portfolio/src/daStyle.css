@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+header {
+  background-color: gray;
+  border: 5px solid black;
+  min-width: 300px;
+}
+
+#forNav {
+  display: inline-block;
+  font-size: 40px;
+}
+
+nav {
+  float: right;
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.mainBox {
+  display: flex;
+  border: 5px solid black;
+  min-width: 300px;
+}
+
+.proBox {
+  justify-content: space-between;
+  border: 3px solid black;
+  flex: 1 0 100px;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Neon_Lights_80s_Tron_Scene_Front_Sunset.png/320px-Neon_Lights_80s_Tron_Scene_Front_Sunset.png");
+  background-position: center;
+  min-width: 300px;
+  font-weight: bold;
+}
+
+#pro1 {
+  background-image: url("https://raw.githubusercontent.com/HavoxPrime/cocktailAndFood/main/Images/Cocktails-and-Food-Homepage.png");
+}
+
+#pro2 {
+  background-image: url("https://raw.githubusercontent.com/HavoxPrime/NFTy/main/public/images/NFTylogo.png");
+  color: black;
+}
+
+#pro3 {
+  background-image: url("https://raw.githubusercontent.com/HavoxPrime/portfolio/main/assets/Images/inventory-management-system.png");
+  color: black;
+}
+
+.proBox:hover {
+  border: 5px solid white;
+  flex: 2 0 100px;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainBox {
+    flex-wrap: wrap;
+  }
+  .proBox {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mainBox {
+    flex-direction: column;
+  }
+  .proBox {
+    flex-direction: column;
+  }
+}
